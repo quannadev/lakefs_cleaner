@@ -1,4 +1,4 @@
-use lakefs::LakeFsClient;
+use lakefs::{Config, LakeFsClient};
 
 pub struct Cleaner {
     conn: duckdb::Connection,
@@ -6,9 +6,12 @@ pub struct Cleaner {
 }
 
 impl Cleaner {
-    pub fn new() -> Self {
+    pub fn new(cfg: Config) -> Self {
         let conn = duckdb::Connection::open("./data/lakefs.db").unwrap();
-        Self { conn }
+        let client = LakeFsClient::new(cfg);
+        Self { conn, client }
     }
+
+
 
 }

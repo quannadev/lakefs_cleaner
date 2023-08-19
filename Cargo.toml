@@ -7,10 +7,11 @@ edition = "2021"
 
 [dependencies]
 async-trait = "0.1.73"
-clap = { version = "4.3.23", features = ["derive"] }
+config = "0.13.3"
 duckdb = { version = "0.8.1", features = ["parquet", "httpfs", "serde_json"] }
 env_logger = "0.10.0"
 lakefs-rs = "1.1.7"
 log = "0.4.20"
+serde = { version = "1.0.183", features = ["derive"] }
 thiserror = "1.0.47"
 tokio = { version = "1.32.0", features = ["full"] }
