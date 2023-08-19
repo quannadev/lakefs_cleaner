@@ -1049,6 +1049,7 @@ dependencies = [
  "env_logger",
  "lakefs-rs",
  "log",
+ "regex",
  "serde",
  "thiserror",
  "tokio",

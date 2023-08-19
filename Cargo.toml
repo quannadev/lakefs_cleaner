@@ -12,6 +12,7 @@ duckdb = { version = "0.8.1", features = ["parquet", "httpfs", "serde_json"] }
 env_logger = "0.10.0"
 lakefs-rs = "1.1.7"
 log = "0.4.20"
+regex = "1.9.3"
 serde = { version = "1.0.183", features = ["derive"] }
 thiserror = "1.0.47"
 tokio = { version = "1.32.0", features = ["full"] }
